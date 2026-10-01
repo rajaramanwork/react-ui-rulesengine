@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+@import 'primeicons/primeicons.css';
+@import 'primereact/resources/themes/lara-light-blue/theme.css';
+@import 'primereact/resources/primereact.min.css';
+
+:root {
+  --surface-ground: #f8f9fb;
+  --rule-accent: #2563eb;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--surface-ground);
+  color: #1e293b;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* PrimeReact overrides for compact enterprise feel */
+.p-datatable .p-datatable-thead > tr > th {
+  background: #f1f5f9 !important;
+  color: #475569 !important;
+  font-size: 0.75rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+  border-bottom: 1px solid #f1f5f9 !important;
+  padding: 0.85rem 1rem !important;
+}
+
+.p-datatable .p-datatable-tbody > tr:hover {
+  background: #f8fafc !important;
+}
+
+.p-tag {
+  font-size: 0.7rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.04em;
+}
+
+.p-dialog .p-dialog-header {
+  background: #1e293b !important;
+  color: #f8fafc !important;
+  border-bottom: none !important;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+  color: #94a3b8 !important;
+}
+
+.p-button.p-button-sm {
+  font-size: 0.8rem !important;
+}
+
+.condition-row {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.action-row {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.rule-card-active {
+  border-left: 3px solid #22c55e;
+}
+
+.rule-card-inactive {
+  border-left: 3px solid #94a3b8;
+}
+
+.sidebar-nav-item {
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.sidebar-nav-item:hover,
+.sidebar-nav-item.active {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.sidebar-nav-item.active {
+  font-weight: 600;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; opacity: 0; }
+::-webkit-scrollbar:hover { opacity: 1; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
